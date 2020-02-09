@@ -1,0 +1,45 @@
+version: '3.5'
+
+services:
+  jb_frontend:
+    build: ./frontend
+    #command: "tail -f /dev/null"
+    command: sh -c "env NODE_ENV=development npm start"
+    depends_on:
+      - jb_backend
+    volumes:
+      - ./frontend/app:/app
+      - jb_modules:/app/node_modules
+    env_file:
+      - ./frontend/.frontend.env
+    ports:
+      - "3000:3000"
+    container_name: jb_frontend
+  jb_backend:
+    build: ./backend
+    command: bash -c "python /app/app.py"
+    depends_on:
+      - jb_mysql
+    volumes:
+      - ./backend/app:/app
+    env_file:
+      - ./backend/.backend.env
+    ports:
+      - "5000:5000"
+    container_name: jb_backend
+  jb_mysql:
+    image: mysql:5.7.21
+    env_file:
+      - ./.mysql.env
+    ports:
+      - "3306:3306" 
+    volumes:
+      - ./mysql:/var/lib/mysql
+    container_name: jb_mysql
+
+networks:
+  default:
+    name: techqueria
+    
+volumes:
+  jb_modules:

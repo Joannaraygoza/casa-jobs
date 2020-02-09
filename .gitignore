@@ -1,0 +1,5 @@
+frontend/app/node_modules
+mysql
+frontend/.frontend.env
+backend/.backend.env
+.mysql.env
