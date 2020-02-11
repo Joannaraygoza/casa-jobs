@@ -1,7 +1,7 @@
 # casa
 Member portal for Techqueria
 
-## Job board
+## Contributions to this project
 
 ### Development environment
 
