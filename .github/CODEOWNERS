@@ -2,4 +2,4 @@
 # Each line is a file pattern followed by one or more owners.
 
 # These owners will flagged as reviewers for every opened pull request in this repo. 
-*       @portal-contributors
+* @portal-contributors
