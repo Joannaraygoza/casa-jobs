@@ -1,4 +1,4 @@
-FROM phusion/passenger-customizable:...
+FROM phusion/passenger-customizable:1.0.9
 MAINTAINER Angel Alvarado
 
 #RUN usermod -u 1000 app
@@ -19,8 +19,8 @@ ADD ./passenger/ssl/bundle.crt /etc/ssl/
 ADD ./passenger/.htpasswd /etc/nginx/.htpasswd
 
 
-ADD ./backend /home/app/backend
-ADD ./build /home/app/frontend
+ADD ./backend/app /home/app/backend
+ADD ./frontend/build /home/app/frontend
 
 WORKDIR /home/app/backend
 RUN chown -R app:app /home/app
