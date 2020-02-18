@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+  jb_frontend:
+    build: ./frontend
+    command: sh -c "npm install && GENERATE_SOURCEMAP=false NODE_ENV=staging REACT_APP_API_HOST=stg-jobs.techqueria.org npm run build --mode production"
+    depends_on:
+      - jb_backend
+    volumes:
+      - ./frontend/app:/app
+      - jb_modules:/app/node_modules
+    env_file:
+      - ./frontend/.frontend.env
+    ports:
+      - "3000:3000"
+    container_name: jb_frontend
+networks:
+  default:
+    name: techqueria
+    
+volumes:
+  jb_modules:

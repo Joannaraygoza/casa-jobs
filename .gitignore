@@ -3,3 +3,5 @@ mysql
 frontend/.frontend.env
 backend/.backend.env
 .mysql.env
+passenger/nginx
+passenger/ssl

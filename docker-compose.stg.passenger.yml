@@ -1,0 +1,40 @@
+version: '3.5'
+
+services:
+  jb_passenger:
+    build: ./passenger
+    ports:
+      - "8443:8443"
+      - "443:443"
+      - "80:80"
+    env_file:
+      - ./backend/.rails.env
+      - ./frontend/.env
+    command: bash -c "/sbin/my_init"
+    volumes:
+      - ./backend:/home/app/backend
+      - ./frontend/build:/home/app/frontend
+      - ./passenger/nginx.conf:/etc/nginx/sites-enabled/jobs.conf
+      - ./passenger/.htpasswd:/etc/nginx/.htpasswd
+      - ./passenger/ssl/nginx.crt:/etc/ssl/nginx.crt
+      - ./passenger/ssl/bundle.crt:/etc/ssl/bundle.crt
+    links:
+      - jb_mysql
+    depends_on:
+      - jb_mysql  
+  jb_mysql:
+    image: mysql:5.7.21
+    env_file:
+      - ./.mysql.env
+    ports:
+      - "3306:3306" 
+    volumes:
+      - ./mysql:/var/lib/mysql
+    container_name: jb_mysql
+
+networks:
+  default:
+    name: techqueria
+    
+volumes:
+  jb_modules:
