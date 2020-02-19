@@ -1,9 +1,8 @@
-# casa WIP
-Member portal for Techqueria
+# Job Board for Techqueria
 
-## Contributions to this project
+Internal job board for Techqueria
 
-### Development environment
+## Development Environment
 
 Flask is host in port 5000
 React is host in port 3000
