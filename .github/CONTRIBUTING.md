@@ -77,13 +77,19 @@ Here's an example of how that can be done by posting under "Experience" or "Volu
 ## Getting Setup  
 ### Fork the repo
 
-[Fork](https://github.com/techqueria/casa-jobs#fork-destination-box) this repository and clone it locally.
+[Fork](https://github.com/techqueria/casa-jobs#fork-destination-box) this repository by using the "Fork" button at the top right corner of the repo, right next to "star"! This brings a copy of this repository into your profile, without changing any of the original project. 
 
 Connect your local to the original "upstream" repository by adding it as [a remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/).
 
-Pull in changes from "upstream" often so that you stay up to date so that when you submit your pull request, merge conflicts will be less likely.
+Pull in changes from "upstream" often so that you stay up to date with master so that when you submit your pull request, merge conflicts will be less likely.
 
 See more detailed instructions through this GitHub article called ["Syncing a Fork"](https://help.github.com/articles/syncing-a-fork/).
+
+Finally, [clone the repo!](https://help.github.com/en/github/getting-started-with-github/fork-a-repo#step-2-create-a-local-clone-of-your-fork)
+Hit the green "clone or download" button or   
+```bash
+> git clone https://github.com/techqueria/casa-jobs.git
+```  
 
 ### Install Dependencies
 
@@ -100,11 +106,19 @@ For Windows:
 [Check out this Docker site](https://hub.docker.com/editions/community/docker-ce-desktop-windows)  
 ### Development Environment
 
-Flask is host in port 5000
-React is host in port 3000
+#### Startup the server   
+Spinning up the docker container will simultaneously spin up the backend Flask server and the frontend React app. Use this Docker command in your terminal.  
+```bash
+> docker-compose -f docker-compose.dev.yml up 
+```
+The backend service is hosted on port 5000. Once you've spun up the Docker container, you can confirm that the backend is running by going to `http://0.0.0.0:5000/health`. You should see 'ok'.   
 
-`docker-compose -f docker-compose.dev.yml up` 
+The frontend service is hosted on port 3000. Again, you'll be able to see this service by going to `http://http://0.0.0.0:3000/`.  
 
+❗Sometimes you'll receive a Docker error due to too many containers. Try this command to troubleshoot before reaching out for help.  
+```bash
+> docker system prune
+```  
 ## Questions?
 
 If you have any questions, comments, concerns or general feedback, we're happy to help!
