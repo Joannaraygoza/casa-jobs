@@ -96,7 +96,7 @@ For OSX:
 > brew cask install docker
 ```  
 <br>
-For Windows:  
+For Windows:   
 [Check out this Docker site](https://hub.docker.com/editions/community/docker-ce-desktop-windows)  
 <br>
 ### Development Environment
