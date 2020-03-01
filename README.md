@@ -1,10 +1,12 @@
+# Jobs.Techqueria.org
+
 [![Join our Slack Workspace](https://img.shields.io/badge/Slack%20Workspace-techqueria.slack.com-blue.svg?logo=slack&longCache=true&style=flat)](https://techqueria.org/slack) [![Chat with us on Gitter](https://img.shields.io/gitter/room/techqueria/Lobby.svg)](https://gitter.im/techqueria/Lobby)
 
 [![Donate](https://opencollective.com/techqueria/tiers/donate/badge.svg?label=Donate&color=brightgreen)](https://opencollective.com/techqueria) [![Become a Patron!](https://img.shields.io/badge/Patreon-Become%20a%20Patron!-orange.svg)](https://www.patreon.com/techqueria)
 
 [Techqueria](http://techqueria.org/) is a nonprofit serving the largest community for Latinx in Tech. 🌮
 
-## Welcome to the casa job board!
+## Welcome to the Casa job board!
 
 The job board is where Techqueria hosts job opportunities for our community. For job seekers, this means seeing available roles, where they're located and where they can apply. For job posters, this means posting their available roles and sharing them with the largest community of Latinx in tech.
 
@@ -39,6 +41,7 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 
 #### Contributors
 
+(your name here 💛️)
 
 ### Thank you to **all our backers**! ([Become a backer](https://opencollective.com/techqueria#backer))
 
