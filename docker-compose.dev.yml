@@ -28,7 +28,7 @@ services:
       - "5000:5000"
     container_name: jb_backend
   jb_mysql:
-    image: mysql:5.7.21
+    image: mysql:8.0.19
     env_file:
       - ./.mysql.env
     ports:
