@@ -1,10 +1,15 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/')
 
+@app.route('/')
 def hello_world():
     return 'Hey, we have Flask in a Docker container!'
+
+
+@app.route('/health')
+def health_check():
+    return "ok", 200
 
 
 if __name__ == '__main__':
