@@ -8,11 +8,11 @@ services:
     ports:
       #- "443:443"
       #- "80:80"
-      - "8080:5000"
+      - "8080:8080"
     env_file:
       - ./backend/.backend.env
       - ./frontend/.frontend.env
-    command: bash -c "python3 app.py & /sbin/my_init"
+    command: bash -c "/sbin/my_init"
     volumes:
       - ./backend/app:/home/app/backend
       #- ./frontend/build:/home/app/frontend
