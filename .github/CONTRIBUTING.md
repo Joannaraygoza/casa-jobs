@@ -85,8 +85,20 @@ Pull in changes from "upstream" often so that you stay up to date so that when y
 
 See more detailed instructions through this GitHub article called ["Syncing a Fork"](https://help.github.com/articles/syncing-a-fork/).
 
-### Installation
+### Install Dependencies
 
+This project relies on [Docker](https://www.docker.com/) to run, please download it to contribute to this project.  
+<br>
+❗You will not need to setup a docker account, just make sure the application is open and running.  
+<br>
+For OSX:
+```bash
+> brew cask install docker
+```  
+<br>
+For Windows:  
+[Check out this Docker site](https://hub.docker.com/editions/community/docker-ce-desktop-windows)  
+<br>
 ### Development Environment
 
 Flask is host in port 5000
