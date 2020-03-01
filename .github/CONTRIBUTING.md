@@ -2,14 +2,15 @@
 
 <!-- TOC -->
 
-- [1. Setting Up](#1-setting-up)
+- [1. Contributing](#contributing)
   - [Ways to Contribute](#ways-to-contribute)
     - [Benefits of Contributing](#benefits-of-contributing)
       - [GitHub Profile](#github-profile)
       - [LinkedIn](#linkedin)
       - [Credibility](#credibility)
-  - [Fork the repo](#fork-the-repo)
-  - [Installation](#installation)  
+  - [Getting Setup](#getting-setup)
+    - [Fork the repo](#fork-the-repo)
+    - [Installation](#installation)  
   - [Questions?](#questions)
     - [GitHub](#github)
     - [Slack](#slack)
@@ -18,7 +19,7 @@
 <!-- /TOC -->
 
 ***  
-## 1. Setting Up
+## 1. Contributing
 
 ### Ways to Contribute
 
@@ -72,7 +73,8 @@ Here's an example of how that can be done by posting under "Experience" or "Volu
 - You can tell people you have contributed to the largest community for Latinx in Tech  
 
 > And there are [many more reasons](https://opensource.guide/how-to-contribute/) why contributing to open source is great!
-
+***
+## Getting Setup  
 ### Fork the repo
 
 [Fork](https://github.com/techqueria/casa-jobs#fork-destination-box) this repository and clone it locally.
