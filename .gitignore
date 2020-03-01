@@ -8,3 +8,4 @@ passenger/ssl
 backend/app/*.log
 backend/app/*.lock
 backend/app/*.pyc
+backend/app/__pycache__/
