@@ -45,4 +45,4 @@ RUN chown -R app:app /home/app/backend
 # RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold" @todo use after finalizing image
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-EXPOSE 8443 443
+EXPOSE 80 443
