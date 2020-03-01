@@ -86,6 +86,13 @@ See more detailed instructions through this GitHub article called ["Syncing a Fo
 
 ### Installation
 
+### Development Environment
+
+Flask is host in port 5000
+React is host in port 3000
+
+`docker-compose -f docker-compose.dev.yml up` 
+
 ## Questions?
 
 If you have any questions, comments, concerns or general feedback, we're happy to help!
