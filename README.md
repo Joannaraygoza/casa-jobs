@@ -17,7 +17,7 @@ This open-source project is built with the community in mind. We share in buildi
 > To get started...
 
 1. 🍴 [Fork](https://github.com/techqueria/casa-jobs#fork-destination-box) this repository
-2. 🔨 View our [contributing guidelines](CONTRIBUTING.md)
+2. 🔨 View our [contributing guidelines](.github/CONTRIBUTING.md)
 3. 🎉 [Open a new pull request](https://github.com/techqueria/casa-jobs/compare) and get it approved!
 
 You can even [report a bug or request a feature](https://github.com/techqueria/casa-jobs/issues/new/choose) - any little bit of help counts! 😊
@@ -26,7 +26,7 @@ You can even [report a bug or request a feature](https://github.com/techqueria/c
 
 In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-More details can be found at this project's [code of conduct](CODE_OF_CONDUCT.md).
+More details can be found at this project's [code of conduct](.github/CODE_OF_CONDUCT.md).
 
 ## 💛️ Contributors, Backers & Sponsors
 
@@ -50,11 +50,3 @@ More details can be found at this project's [code of conduct](CODE_OF_CONDUCT.md
 ### **Support this project by becoming a sponsor.** Your logo will show up here with a link to your website. ([Become a sponsor](https://opencollective.com/techqueria#sponsor))
 
 <a href="https://opencollective.com/techqueria#sponsor" target="_blank" rel="noopener"><img alt="Open Collective - Sponsors" src="https://opencollective.com/techqueria/sponsors.svg?width=890"></a>
-
-
-### Development Environment
-
-Flask is host in port 5000
-React is host in port 3000
-
-`docker-compose -f docker-compose.dev.yml up` 
