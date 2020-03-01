@@ -94,11 +94,10 @@ This project relies on [Docker](https://www.docker.com/) to run, please download
 For OSX:
 ```bash
 > brew cask install docker
-```  
-<br>
-For Windows:   
+```   
+
+For Windows:  
 [Check out this Docker site](https://hub.docker.com/editions/community/docker-ce-desktop-windows)  
-<br>
 ### Development Environment
 
 Flask is host in port 5000
