@@ -8,6 +8,7 @@ services:
     ports:
       #- "443:443"
       #- "80:80"
+      # @todo change this back
       - "8080:8080"
     env_file:
       - ./backend/.backend.env
