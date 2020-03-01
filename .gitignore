@@ -5,3 +5,6 @@ backend/.backend.env
 .mysql.env
 passenger/nginx
 passenger/ssl
+backend/app/*.log
+backend/app/*.lock
+backend/app/*.pyc

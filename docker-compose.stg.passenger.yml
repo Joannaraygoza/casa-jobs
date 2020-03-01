@@ -2,28 +2,30 @@ version: '3.5'
 
 services:
   jb_passenger:
-    build: ./passenger
+    build:
+      context: .
+      dockerfile: DockerfilePassenger
     ports:
-      - "8443:8443"
-      - "443:443"
-      - "80:80"
+      #- "443:443"
+      #- "80:80"
+      - "5000:80"
     env_file:
-      - ./backend/.rails.env
-      - ./frontend/.env
-    command: bash -c "/sbin/my_init"
+      - ./backend/.backend.env
+      - ./frontend/.frontend.env
+    command: bash -c "python3 app.py & /sbin/my_init"
     volumes:
-      - ./backend:/home/app/backend
-      - ./frontend/build:/home/app/frontend
-      - ./passenger/nginx.conf:/etc/nginx/sites-enabled/jobs.conf
-      - ./passenger/.htpasswd:/etc/nginx/.htpasswd
-      - ./passenger/ssl/nginx.crt:/etc/ssl/nginx.crt
-      - ./passenger/ssl/bundle.crt:/etc/ssl/bundle.crt
+      - ./backend/app:/home/app/backend
+      #- ./frontend/build:/home/app/frontend
+      - ./passenger/nginx/jobs.conf:/etc/nginx/sites-enabled/jobs.conf
+      #- ./passenger/.htpasswd:/etc/nginx/.htpasswd
+      #- ./passenger/ssl/nginx.crt:/etc/ssl/nginx.crt
+      #- ./passenger/ssl/bundle.crt:/etc/ssl/bundle.crt
     links:
       - jb_mysql
     depends_on:
       - jb_mysql  
   jb_mysql:
-    image: mysql:5.7.21
+    image: mysql:8.0.19
     env_file:
       - ./.mysql.env
     ports:

@@ -1,0 +1,48 @@
+FROM phusion/passenger-customizable:1.0.9
+MAINTAINER Angel Alvarado
+
+# Set correct environment variables.
+ENV HOME /root
+
+#Default user
+RUN usermod -u 1000 app
+RUN usermod -G staff app
+
+# Default
+CMD ["/sbin/my_init"]
+
+# Enable Python and Pip
+ADD ./passenger/python.sh /pd_build/python.sh
+RUN chmod 555 /pd_build/python.sh
+RUN /pd_build/python.sh
+
+# Enable Nginx
+RUN rm -f /etc/service/nginx/down
+
+# Nginx config
+ADD ./passenger/nginx/jobs.conf /etc/nginx/sites-enabled/jobs.conf
+
+# Disable default config
+RUN rm /etc/nginx/sites-enabled/default
+
+# @todo to add SSL certificate.
+#ADD ./passenger/ssl/nginx.crt /etc/ssl/
+#ADD ./passenger/ssl/nginx.key /etc/ssl/
+#ADD ./passenger/ssl/bundle.crt /etc/ssl/
+#ADD ./passenger/nginx/.htpasswd /etc/nginx/.htpasswd
+
+# Flask App
+RUN mkdir /home/app/backend
+ADD ./backend/app /home/app/backend
+# @todo frontend code
+#ADD ../frontend/build /home/app/frontend
+# Install requirements
+RUN pip3 install -r /home/app/backend/requirements.txt
+
+WORKDIR /home/app/backend
+RUN chown -R app:app /home/app/backend
+
+# RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold" @todo use after finalizing image
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+EXPOSE 8443 443
