@@ -115,7 +115,7 @@ The backend service is hosted on port 5000. Once you've spun up the Docker conta
 
 The frontend service is hosted on port 3000. Again, you'll be able to see this service by going to `http://http://0.0.0.0:3000/`.  
 
-❗Sometimes you'll receive a Docker error due to too many containers. Try this command to troubleshoot before reaching out for help.  
+❗Sometimes you'll receive a Docker error due to too many containers or dependencies running at a time. Try this command to troubleshoot before reaching out for help.  
 ```bash
 > docker system prune
 ```  
