@@ -1,6 +1,6 @@
 # Jobs.Techqueria.org
 
-[![Join our Slack Workspace](https://img.shields.io/badge/Slack%20Workspace-techqueria.slack.com-blue.svg?logo=slack&longCache=true&style=flat)](https://techqueria.org/slack) [![Chat with us on Gitter](https://img.shields.io/gitter/room/techqueria/Lobby.svg)](https://gitter.im/techqueria/Lobby)
+[![Join our Slack Workspace](https://img.shields.io/badge/Slack%20Workspace-techqueria.slack.com-blue.svg?logo=slack&longCache=true&style=flat)](https://techqueria.org/slack) 
 
 [![Donate](https://opencollective.com/techqueria/tiers/donate/badge.svg?label=Donate&color=brightgreen)](https://opencollective.com/techqueria) [![Become a Patron!](https://img.shields.io/badge/Patreon-Become%20a%20Patron!-orange.svg)](https://www.patreon.com/techqueria)
 
@@ -17,7 +17,7 @@ This open-source project is built with the community in mind. We share in buildi
 > To get started...
 
 1. 🍴 [Fork](https://github.com/techqueria/casa-jobs#fork-destination-box) this repository
-2. 🔨 View our [contributing guidelines](.github/CONTRIBUTING.md)
+2. 🔨 View our [contributing guidelines](CONTRIBUTING.md)
 3. 🎉 [Open a new pull request](https://github.com/techqueria/casa-jobs/compare) and get it approved!
 
 You can even [report a bug or request a feature](https://github.com/techqueria/casa-jobs/issues/new/choose) - any little bit of help counts! 😊
