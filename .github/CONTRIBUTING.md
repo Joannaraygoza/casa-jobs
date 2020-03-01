@@ -26,14 +26,14 @@
 
 Feel free to contribute to the Techqueria website in one or more of the following ways and thank you for being willing to help out! 😊
 
-- Tackle any of the [open issues](https://github.com/techqueria/casa-jobs/issues) that are labeled `help wanted`, `good first issue` or `hacktoberfest`.
+- Tackle any of the [open issues](https://github.com/techqueria/casa-jobs/issues) that are labeled `help wanted`, `good first issue` or `bug`.
   - If an issue has the label `in progress`, someone is already working on it.
   - If an issue has the label `admin`, an admin probably needs to get involved since it requires admin access.
   - **Even if an issue has someone assigned, it still might need extra help so check it out if it appeals to you!**
 - [Open a new issue](https://github.com/techqueria/casa-jobs/issues/new/choose)
-- [Report a bug](https://github.com/techqueria/casa-jobs/issues/new?template=bug-report.md)
-- [Request a new feature](https://github.com/techqueria/casa-jobs/issues/new?template=feature-request.md)
-- Improve our [contributing guidelines](https://github.com/techqueria/casa-jobs/blob/master/CONTRIBUTING.md) (this file) or other documentation
+- [Report a bug](https://github.com/techqueria/casa-jobs/issues/new?assignees=KGmajor&labels=bug&template=bug_report.md&title=%5BBUG%5D)
+- [Request a new feature](https://github.com/techqueria/casa-jobs/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=%5BFeature+Request%5D)
+- Improve our [contributing guidelines](https://github.com/techqueria/casa-jobs/blob/master/.github/CONTRIBUTING.md) (this file) or other documentation
 - Fix typos or grammar errors on pages or across the code base
 - Refactor code
 - Anything else you can think of! 😆
