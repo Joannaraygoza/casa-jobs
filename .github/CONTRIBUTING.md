@@ -103,7 +103,10 @@ For OSX:
 ```   
 
 For Windows:  
-[Check out this Docker site](https://hub.docker.com/editions/community/docker-ce-desktop-windows)  
+[Check out this Docker site](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+
+Or check additional instructions for other [operating systems](https://gist.github.com/rstacruz/297fc799f094f55d062b982f7dac9e41)
+
 ### Development Environment
 
 #### Startup the server   
@@ -111,9 +114,9 @@ Spinning up the docker container will simultaneously spin up the backend Flask s
 ```bash
 > docker-compose -f docker-compose.dev.yml up 
 ```
-The backend service is hosted on port 5000. Once you've spun up the Docker container, you can confirm that the backend is running by going to `http://0.0.0.0:5000/health`. You should see 'ok'.   
+The backend service is hosted on port 5000. Once you've spun up the Docker container, you can confirm that the backend is running by going to `http://locahost:5000/health`. You should see 'ok'.   
 
-The frontend service is hosted on port 3000. Again, you'll be able to see this service by going to `http://http://0.0.0.0:3000/`.  
+The frontend service is hosted on port 3000. Again, you'll be able to see this service by going to `http://locahost:3000/`.  
 
 ❗Sometimes you'll receive a Docker error due to too many containers or dependencies running at a time. Try this command to troubleshoot before reaching out for help.  
 ```bash
