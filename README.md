@@ -1,5 +1,7 @@
 # Jobs.Techqueria.org
 
+## This Project has been postponed as of March 2020.
+
 [![Join our Slack Workspace](https://img.shields.io/badge/Slack%20Workspace-techqueria.slack.com-blue.svg?logo=slack&longCache=true&style=flat)](https://techqueria.org/slack) 
 
 [![Donate](https://opencollective.com/techqueria/tiers/donate/badge.svg?label=Donate&color=brightgreen)](https://opencollective.com/techqueria) [![Become a Patron!](https://img.shields.io/badge/Patreon-Become%20a%20Patron!-orange.svg)](https://www.patreon.com/techqueria)
