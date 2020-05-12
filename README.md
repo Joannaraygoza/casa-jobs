@@ -43,7 +43,8 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 
 #### Contributors
 
-(your name here 💛️)
+- [Joanna Raygoza](https://github.com/joannaraygoza)
+- (your name here 💛️)
 
 ### Thank you to **all our backers**! ([Become a backer](https://opencollective.com/techqueria#backer))
 
